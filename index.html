@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 5</title>
+</head>
+<body>
+    <h1>MyToken DApp</h1>
+    <h4 id="supply"></h4>
+<h4>Get balance:</h4>
+    <div>
+        <input type="text" id="address" placeholder="Enter Address">
+        <button onclick="getBalance()">Check Balance</button>
+        <div id="balance"></div>
+    </div>
+<h4>Transfer funds:</h4>
+    <div>
+        Sender: <input type="text" id="sender" placeholder="Sender Address">
+        Recipient: <input type="text" id="recipient" placeholder="Recipient Address">
+        Amount: <input type="text" id="amount" placeholder="Amount">
+        <button onclick="transferTokens()">Transfer Tokens</button>
+        <div id="transactionResult"></div>
+    </div>
+<h4>Connect to Metamask:</h4>
+    <div>
+        <button onclick="connectMetamask()">Connect Metamask</button>
+        <div id="connection"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
